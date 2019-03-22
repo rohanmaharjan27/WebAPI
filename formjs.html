@@ -1,0 +1,58 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function UserInput(){
+			var a=Number(document.getElementById("first").value);
+			var b=Number(document.getElementById("second").value);
+			var c=document.getElementById("click").value;
+			
+			
+		if (c=="Add")
+		{
+			alert(a+b);
+		}
+		else if(c=="Subtract")
+		{
+			if (a>b)
+			 {
+				alert(a-b);
+			}
+			else
+			{
+				alert(b-a);
+			}
+		}
+		else if (c=="Multiply")
+		 {
+			alert(a*b);
+		}
+		else
+		{
+			alert(a/b);
+		}
+	}
+		
+			
+			
+			
+			
+		
+			
+
+	</script>
+</head>
+<body>
+	<form>
+		Enter first number:<input type="text" name="numberone" id="first" /><br>
+		Enter second number:<input type="text" name="numbertwo" id="second" /><br>
+		<select id="click">
+			<option>Add</option>
+			<option>Subtract</option>
+			<option>Multiply</option>
+			<option>Divide</option>
+		</select>
+		<button onclick="UserInput()">Submit</button>
+
+</form>
+</body>
+</html>
